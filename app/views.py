@@ -2,5 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def indexView(request):
-    return render(request)("Hello, world. You're at the app index.")
+    return render(request, "index.html")
+def aboutView(request):
+    return render(request, "about.html")
+
 # Create your views here.
